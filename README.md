@@ -10,7 +10,7 @@
 #### This is confirmed by debug code sending the received "SOH" byte to "terminal 2"
 
 #### The code up until line 424 works correctly
-#### After this where the inline assembler code starts to receiv the packet data it fails.
+#### After this where the inline assembler code starts to receive the packet data it fails.
 #### The assembler code points (HL) registers at memory 0x9001 for storing packet data. The B register is set so that it will read in 134 bytes of packet data.
 #### The code checks the UART0 status register to see if the RX buffer is empty and reads in a byte from the UART data register when ready.
 #### The code checks for an over-run error by reading "ASCI Control register EFR bit 3" and jumps to "error:" and executes a HALT instruction if over-run occurs. 
