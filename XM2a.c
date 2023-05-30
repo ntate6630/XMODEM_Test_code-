@@ -532,7 +532,7 @@ void initReceive(void)
 {
     int st;
 
-    printf("\x1b[13;02f");   //Set cursor position.
+//    printf("\x1b[13;02f");   //Set cursor position.
     printf("Send data using the xmodem protocol from your terminal emulator now...\n\n");  
     st = xmodemReceive();
     if(st < 0)
