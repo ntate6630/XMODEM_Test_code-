@@ -1,4 +1,5 @@
 /* XMODEM for Z180 CPM2.2 */
+/* Using Z88DK compiler */
 /* zcc +cpm -mz180 xm2a.c -o xm2a.com */
 #include <stdio.h>
 #include <stdlib.h>
